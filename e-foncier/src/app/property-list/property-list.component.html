@@ -1,0 +1,6 @@
+<ul>
+  <li *ngFor="let property of properties">
+    {{ property.name }} - {{ property.location }}
+    <button (click)="viewDetails(property)">Details</button>
+  </li>
+</ul>

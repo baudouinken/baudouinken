@@ -47,3 +47,6 @@ Hello there, I'm **Baudouin Keunne**, a **Software Engineering student** 💻 fr
 
 
 
+
+## Projects
+- [E-Foncier](./e-foncier) - MVP Angular application

@@ -1,0 +1,6 @@
+<h2>Recherche de titre foncier</h2>
+<input [(ngModel)]="query" placeholder="Numéro ou nom" />
+<button (click)="search()">Rechercher</button>
+<ul>
+  <li *ngFor="let r of results">{{ r.name }} - {{ r.location }}</li>
+</ul>
