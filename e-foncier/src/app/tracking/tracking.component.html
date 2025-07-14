@@ -1,0 +1,11 @@
+<h2>Suivi de dossier</h2>
+<ul>
+  <li *ngFor="let d of dossiers">
+    Dossier {{ d.id }} - Statut: {{ d.status }}
+    <select (change)="updateStatus(d, $event.target.value)">
+      <option>En cours</option>
+      <option>Accepté</option>
+      <option>Refusé</option>
+    </select>
+  </li>
+</ul>

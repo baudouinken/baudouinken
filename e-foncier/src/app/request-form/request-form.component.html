@@ -1,0 +1,16 @@
+<h2>Dépôt de demande</h2>
+<form (ngSubmit)="submit()">
+  <label>Nom:
+    <input [(ngModel)]="name" name="name" />
+  </label>
+  <label>Numéro de titre:
+    <input [(ngModel)]="titleNumber" name="title" />
+  </label>
+  <label>Pièces jointes:
+    <input type="file" multiple (change)="onFileSelected($event)" />
+  </label>
+  <button type="submit">Envoyer</button>
+</form>
+<ul>
+  <li *ngFor="let file of attachments">{{ file }}</li>
+</ul>
